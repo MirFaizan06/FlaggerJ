@@ -1,0 +1,38 @@
+flags:
+  - key: new-checkout
+    type: BOOLEAN
+    defaultValue: "false"
+    enabled: true
+    rules:
+      - attribute: country
+        operator: EQUALS
+        value: US
+        result: "true"
+      - attribute: country
+        operator: IN
+        values:
+          - CA
+          - MX
+        result: "true"
+
+  - key: max-items-per-cart
+    type: INTEGER
+    defaultValue: "10"
+
+  - key: checkout-discount-rate
+    type: DOUBLE
+    defaultValue: "0.0"
+    rules:
+      - attribute: plan
+        operator: EQUALS
+        value: enterprise
+        result: "0.15"
+
+  - key: welcome-message
+    type: STRING
+    defaultValue: "Welcome!"
+    rules:
+      - attribute: country
+        operator: EQUALS
+        value: US
+        result: "Welcome to the US store!"
