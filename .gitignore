@@ -1,6 +1,7 @@
 target/
 *.class
 .claude/
+marketing/
 *.log
 .idea/
 *.iml
