@@ -148,8 +148,7 @@ dependencies {
 ```
 
 > Replace `v1.0.0` with whatever Git tag you actually release — JitPack builds a version the first
-> time someone requests that tag, and caches the result afterwards. See
-> [`PUBLISHING.md`](PUBLISHING.md) for the exact steps to cut a release.
+> time someone requests that tag, and caches the result afterwards.
 >
 > Prefer to skip GitHub entirely? Build and `mvn install` locally (see
 > [Building from source](#building-from-source)) and depend on `com.flaggerj:flaggerj-core:1.0.0`
